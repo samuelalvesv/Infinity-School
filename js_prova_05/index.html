@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova - Aula 05</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Gerenciador de Tarefas Domésticas</h1>
+    
+    <div id="div_adicionar">
+        <label for="text">Nova tarefa: </label>
+        <input type="text" placeholder="Digite a nova tarefa" id="txt_tarefa">
+        <label for="pessoas">Pessoa responsável: </label>
+        <select id="responsavel">
+            <option value="Ana">Ana</option>
+            <option value="Carlos">Carlos</option>
+            <option value="Maria">Maria</option>
+            <option value="Pedro">Pedro</option>
+        </select>
+        <button id="btn_adicionar" onclick="Adicionar()">Adicionar</button>
+    </div>
+
+    <div id="div_modificar">
+        <label for="number">ID: </label>
+        <input type="number" placeholder="ID" id="txt_id">
+        <label for="text">Editar tarefa: </label>
+        <input type="text" placeholder="Digite a nova tarefa" id="txt_tarefa_edit">
+
+        <label for="pessoas">Pessoa responsável: </label>
+        <select id="responsavel_edit">
+            <option value="Ana">Ana</option>
+            <option value="Carlos">Carlos</option>
+            <option value="Maria">Maria</option>
+            <option value="Pedro">Pedro</option>
+        </select>
+        <button id="btn_editar" onclick="Editar()">Editar</button>
+        <button id="btn_excluir" onclick="Excluir()">Excluir</button>
+    </div>
+    
+    <div id="resultado">
+        <ul id="lista_tarefas"></ul>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
